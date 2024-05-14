@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Metadata Importer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@woodwing/assets-client-sdk"></script>
+    <!-- <script src="https://unpkg.com/@woodwing/assets-client-sdk"></script> -->
+    <!-- <script src="../../bundled/assets-client-sdk.min.js"></script> -->
+    <link href="resources/style.css" rel="stylesheet" type="text/css" defer />
+    <script src="resources/script.js"></script>
+
+    <!-- <script type="text/javascript" src="dist/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="dist/jszip.js"></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+
+<body onload="init()">
+
+    <div id="info">
+        <h2>Error 401</h2>
+        <h2>Unauthorized</h2>
+    </div>
+
+    <div id="main" class="main" style="display: none">
+        <h2>Metadata Importer</h2>
+
+        <div id="droparea">
+            <form class="dropform">
+                Drop the sidecar file here</br>
+                <span id="small">Supported Format: csv, ods, xls, xlsx</span>
+                <input type="file" id="elementFile" accept=".csv, .ods, .xls, .xlsx">
+            </form>
+        </div>
+
+        <div id="areaInfo">
+            <pre id="areaInfoPre">
+<code id="areaDisplay">
+</code>
+        </pre>
+        </div>
+
+        </p>
+        <div id="error" class="error">
+        </div>
+        <div id="areaButton" class="areaButton">
+            <button type="button" id="btnUpdate">Update</button>
+            <button  type="button" id="btnClose">Close</button>
+        </div>
+    </div>
+
+    <div id="sig" class="sig"><img src="./icon24.png" /></div>
+</body>
+
+</html>

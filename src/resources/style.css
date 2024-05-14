@@ -1,0 +1,100 @@
+* {
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #dddddd;
+    padding: 5px;
+}
+
+#droparea {
+    border: 2px dashed;
+    border-color: #202020;
+    border-radius: 10px;
+    width: 400px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#droparea.highlight {
+    border-color: coral;
+    background-color: coral;
+}
+
+
+.dropform {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button:hover {
+    background: #ddd;
+}
+
+#elementFile {
+    display: none;
+}
+
+#small {
+    font-size: 10px;
+}
+
+
+#areaInfo {
+    border: 2px dashed;
+    border-color: #818181;
+    border-radius: 10px;
+    margin: auto;
+    width: 400px;
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: lightgray;
+
+}
+
+
+#areaInfoPre {
+    height: 160px;
+    max-height: 160px;
+    overflow: auto;
+    background-color: lightgray;
+    word-break: normal;
+    word-wrap: normal;
+    white-space: pre;
+}
+
+.areaButton {
+    /* float: right; */
+    display: flex;
+    float: right;
+}
+
+.main {
+    position: relative;
+}
+
+.sig {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
